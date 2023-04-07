@@ -195,3 +195,23 @@ tooltip: {
 
 var chart = new ApexCharts(document.querySelector("#chart"), options);
 chart.render();
+
+
+
+//Dark Mode
+const mode = document.getElementById('mode');
+
+
+	if(this.checked) {
+		document.body.classList.add('dark');
+	}   else{
+		document.body.classList.remove('dark');
+	}
+
+	mode.addEventListener('change', function () {
+		if(this.checked) {
+			document.body.classList.add('dark');
+		}   else {
+			document.body.classList.remove('dark');
+		}
+	})
