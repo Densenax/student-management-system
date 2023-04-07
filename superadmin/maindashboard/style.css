@@ -20,6 +20,9 @@
 	--red: #FC3B56;
 	--lightpink: #ffdef0;
 	--hotpink: #E358A6;
+	--sidebarpink: #E358A6;
+	--sidebarlight: #fff;
+	--sidebarhover: #79345B;
 }
 
 html {
@@ -38,7 +41,7 @@ body.dark{
 	--dark: #fff;
 	--lightpink: #79345B;
 	--hotpink: #aa7693;
-	--
+	
 
 }
 
@@ -61,7 +64,7 @@ li {
 	position: fixed;
 	max-width: 260px;
 	width: 100%;
-	background: var(--light);
+	background: var(--sidebarpink);
 	top: 0;
 	left: 0;
 	height: 100%;
@@ -85,7 +88,7 @@ li {
 	align-items: center;
 	height: 64px;
 	font-weight: 700;
-	color: var(--blue);
+	color: var(--hotpink);
 	position: sticky;
 	top: 0;
 	left: 0;
@@ -135,7 +138,7 @@ li {
 }
 #sidebar .side-menu > li > a.active,
 #sidebar .side-menu > li > a.active:hover {
-	background: var(--blue);
+	background: var(--sidebarhover);
 	color: #fff;
 }
 #sidebar .divider {
@@ -143,7 +146,7 @@ li {
 	font-size: 12px;
 	text-transform: uppercase;
 	font-weight: 700;
-	color: var(--dark-grey);
+	color: var(--sidebarlight);
 	transition: all .3s ease;
 	white-space: nowrap;
 }
@@ -154,7 +157,7 @@ li {
 	text-align: center;
 }
 #sidebar .side-dropdown {
-	padding-left: 54px;
+	padding-left: 35px;
 	max-height: 0;
 	overflow-y: hidden;
 	transition: all .15s ease;
@@ -163,7 +166,7 @@ li {
 	max-height: 1000px;
 }
 #sidebar .side-dropdown a:hover {
-	color: var(--blue);
+	color: var(--sidebarlight);
 }
 #sidebar .ads {
 	width: 100%;
