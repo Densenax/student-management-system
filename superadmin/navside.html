@@ -4,65 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--Icon Style-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--CSS File-->
     <link rel="stylesheet" href="navside.css">
+    <!--Title-->
     <title>IMCC | Dashboard</title>
 </head>
 <body>
-    
-    <nav class="sidebar">
-        <div class="sidebar-inner">
-            <header class="sidebar-header">
-                <button type="button" class="sidebar-burger" onclick="toggleSidebar()">
-                    <i class='bx bx-menu'></i>
-                </button>
-                <img src="logo.png" alt="" class="sidebar-logo">
-            </header>
+    <!--Menu Button-->
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="side-bar">
+        <!--header section-->
+        <header>
+            <!-- close button-->
+            <div class="close-btn">
+                <i class="fas fa-times"></i>
+            </div>
+            <!--image-->
+            <img src="https://media2.giphy.com/media/Ue55CpP8r1lAc/giphy.gif?cid=ecf05e47dacs6sr6gnirwjwms5vd9kwt1fw500uum71dauzm&rid=giphy.gif&ct=g" alt="">
+            <!--Logo-->
+            <h1>Logo Here</h1>
+        </header>
 
-            <nav class="sidebar-menu">
-                <button type="button">
-                    <i class='bx bx-home' ></i>
-                    <span>Home</span>
-                </button>
-                <button type="button">
-                    <i class='bx bx-user' ></i>
-                    <span>Profile</span>
-                </button>
-                <button type="button" class="has-border">
-                    <i class='bx bx-cog' ></i>
-                    <span>Settings</span>
-                </button>
-                </button>
-                <button type="button">
-                    <i class='bx bx-objects-horizontal-left'></i>
-                    <span>Statistics</span>
-                </button>
-                <button type="button">
-                    <i class='bx bx-paperclip' ></i>
-                    <span>AudioVibe</span>
-                </button>
-                <button type="button" class="has-border">
-                    <i class='bx bx-music' ></i>
-                    <span>Soundblast</span>
-                </button>
-                <button type="button">
-                    <i class='bx bx-folder' ></i>
-                    <span>Folders</span>
-                </button>
-                <button type="button">
-                    <i class='bx bxs-school'></i>
-                    <span>Classes</span>
-                </button>
-            </nav>
-
-
+        <!-- Menu Items-->
+        <div class="menu">
+            <div class="item"><a href=""><i class="fa-solid fa-house"></i>Home</a></div>
+            <div class="item"><a class="sub-btn"><i class="fa-solid fa-graduation-cap"></i>Student
+            <!--Drop Down Menu-->
+            <!--Drop Down Arrow-->
+            <i class="fas fa-angle-left dropdown"></i>
+            </a>
+            <div class="sub-menu">
+                <a href=""><i class="fa-solid fa-pen-ruler"></i>Student Profile</a>
+                <a href=""><i class="fa-solid fa-clipboard"></i>COR</a>
+                <a href=""><i class="fa-solid fa-pen-ruler"></i>Class Schedule</a>
+                <a href=""><i class="fa-solid fa-check-to-slot"></i>Attendance</a>
+                <a href=""><i class="fa-solid fa-list-check"></i>Clearance</a>
+            </div>
+            </div>
+            <div class="item"><a href=""><i class="fa-solid fa-calendar-days"></i>School Calendar</a></div>
+            <div class="item"><a href=""><i class="fa-solid fa-up-right-from-square"></i>IMCC Website</a></div>
+            <div class="item"><a href=""><i class="fa-solid fa-gear"></i>Settings</a></div>
+            <div class="item"><a href=""><i class="fa-solid fa-right-from-bracket"></i>Logout</a></div>
         </div>
-    </nav>
 
+    </div>
 
-    <script type="text/javascript">
-        const toggleSidebar = () => document.body.classList.toggle("open");
-    </script>
+    <!--Jquery CDN link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
 
-</body>
+    <script src="navside.js"></script>
+</body>  
 </html>

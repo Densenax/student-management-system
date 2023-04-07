@@ -1,131 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *{
-    box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "Poppins", sans-serif;
 }
 
 body{
-    margin: 0;
-    background: #121212;
+ min-height: 100vh;
+ background: white;
+ color: white;
+ background-size: cover;
+ background-position: center;
 }
 
-button{
-    background: transparent;
-    border: 0;
-    padding: 0;
-    cursor: pointer;
+.side-bar{
+ background: #1b1a1b;
+ backdrop-filter: blur(15px);
+ width: 250px;
+ height: 100vh;
+ position: fixed;
+ top: 0;
+ left: -250px;
+ overflow-y: auto;
+ transition: 0.6s ease;
+ transition-property: left;
+}
+.side-bar::-webkit-scrollbar {
+  width: 0px;
 }
 
-.sidebar{
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    width: 75px;
-    height: 100%;
-    background: #E358A6;
-    transition: all 0.4s;
+
+
+.side-bar.active{
+ left: 0;
+}
+h1{
+
+  text-align: center;
+  font-weight: 500;
+  font-size: 25px;
+  padding-bottom: 13px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
 }
 
-body.open .sidebar{
-    width: 240px;
+.side-bar .menu{
+ width: 100%;
+ margin-top: 30px;
 }
 
-.sidebar-inner{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 300px;
+.side-bar .menu .item{
+ position: relative;
+ cursor: pointer;
 }
 
-.sidebar-header{
-    display: flex;
-    align-items: center;
-    height: 68px;
-    padding: 0 1.25rem 0 0;
-    background: rgba(0, 0, 0, 0.1);
-    border-left: 3px solid transparent;
-    transition: all 0.4s;
+.side-bar .menu .item a{
+ color: #fff;
+ font-size: 16px;
+ text-decoration: none;
+ display: block;
+ padding: 5px 30px;
+ line-height: 50px;
 }
 
-.sidebar-header:hover{
-    border-left: 3px solid #bdbdbd;
+.side-bar .menu .item a:hover{
+ background: #33363a;
+ transition: 0.3s ease;
 }
 
-.sidebar-burger{
-    width: 70px;
-    height: 70px;
-    display: grid;
-    place-items: center;
+.side-bar .menu .item i{
+ margin-right: 15px;
 }
 
-.sidebar-burger > i, body.open .sidebar-burger > i{
-    font-size: 25px;
-    color: #f9f9f9;
-    transition: all 0.4s;
+.side-bar .menu .item a .dropdown{
+ position: absolute;
+ right: 0;
+ margin: 20px;
+ transition: 0.3s ease;
 }
 
-.sidebar-burger:hover > i, body.open .sidebar-burger:hover > i{
-    color: #bdbdbd;
+.side-bar .menu .item .sub-menu{
+ background: #262627;
+ display: none;
 }
 
-.sidebar-logo{
-    height: 25px;
-    opacity: 0;
-    transition: all 0.4s;
+.side-bar .menu .item .sub-menu a{
+ padding-left: 50px;
+ font-size: 13px;
 }
 
-body.open .sidebar-logo{
-    opacity: 1;
-    transition: all 0.4s;
+.rotate{
+ transform: rotate(-90deg);
 }
 
-.sidebar-menu{
-    display: grid;
+.close-btn{
+ position: absolute;
+ color: #fff;
+
+ font-size: 23px;
+ right:  0px;
+ margin: 15px;
+ cursor: pointer;
 }
 
-.sidebar-menu > button{
-    display: flex;
-    gap: 12px;
-    align-items: center;
-    height: 55px;
-    font-family: "Poppins";
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 2px;
-    line-height: 1;
-    padding: 0 22px;
-    border-left: 3px solid transparent;
-    transition: all 0.4s;
+.menu-btn{
+ position: absolute;
+ color: rgb(0, 0, 0);
+ font-size: 35px;
+ margin: 25px;
+ cursor: pointer;
 }
 
-.sidebar-menu > button:hover{
-    border-left: 3px solid #f9f9f9;
+.main{
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 50px;
 }
 
-.sidebar-menu > button.has-border{
-    padding-bottom: 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-    margin-bottom: 1rem;
+.main h1{
+ color: rgba(255, 255, 255, 0.8);
+ font-size: 60px;
+ text-align: center;
+ line-height: 80px;
 }
 
-.sidebar-menu > button > i{
-    font-size: 25px;
-    color: #f9f9f9;
-    transition: all 0.4s;
+@media (max-width: 900px){
+ .main h1{
+   font-size: 40px;
+   line-height: 60px;
+ }
 }
-
-.sidebar-menu > button:hover > i, .sidebar-menu > button:hover > span{
-    color: #bdbdbd;
+img{
+  width: 100px;
+  margin: 15px;
+  border-radius: 50%;
+  margin-left: 70px;
+  border: 3px solid #b4b8b9;
 }
-
-.sidebar-menu > button > span{
-    color: #f9f9f9;
-    opacity: 0;
-    transition: all 0.4s;
-}
-
-body.open .sidebar-menu > button > span{
-    opacity: 1;
-    transition: all 0.4s;
+header{
+  background: #33363a;
 }
