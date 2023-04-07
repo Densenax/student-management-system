@@ -587,7 +587,7 @@ main .chat-box .msg.me .profile {
 main .chat-box .msg.me p {
 	background: var(--grey);
 	border-radius: 5px 0 5px 5px;
-	color: var(--dark);
+	
 }
 main form {
 	margin-top: 6px;
