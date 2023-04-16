@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  h2 {
+    margin-top: 50px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  input[type="text"], input[type="date"], select {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  
+  button[type="button"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  p {
+    margin-top: 10px;
+  }
+  
+  table {
+    margin-top: 50px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .header-row {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  #course-list, #session-list, #attendance-list {
+    height: 200px;
+    overflow-y: scroll;
+  }
+  
+  #course-list td:first-child, #session-list td:first-child, #attendance-list td:first-child {
+    width: 50%;
+  }

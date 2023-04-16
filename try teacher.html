@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teacher Management System</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Teacher Management System</h1>
+
+	<!-- Attendance Tracking Section -->
+	<section>
+		<h2>Attendance Tracking</h2>
+		<form>
+			<label for="teacher-name">Teacher Name:</label>
+			<input type="text" id="teacher-name" name="teacher-name" required>
+			<label for="class-name">Class Name:</label>
+			<input type="text" id="class-name" name="class-name" required>
+			<label for="attendance-date">Attendance Date:</label>
+			<input type="date" id="attendance-date" name="attendance-date" required>
+			<label for="attendance-status">Attendance Status:</label>
+			<select id="attendance-status" name="attendance-status">
+				<option value="present">Present</option>
+				<option value="absent">Absent</option>
+				<option value="late">Late</option>
+			</select>
+			<button type="button" onclick="submitAttendance()">Submit Attendance</button>
+			<p id="attendance-sent"></p>
+		</form>
+		<div id="attendance-history"></div>
+	</section>
+
+	<!-- Student Feedback Section -->
+	<section>
+		<h2>Student Feedback</h2>
+		<form>
+			<label for="student-name">Student Name:</label>
+			<input type="text" id="student-name" name="student-name" required>
+			<label for="feedback">Feedback:</label>
+			<textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea>
+			<button type="button" onclick="submitFeedback()">Submit Feedback</button>
+			<p id="feedback-sent"></p>
+		</form>
+		<div id="feedback-history"></div>
+	</section>
+
+	<!-- Leave Management Section -->
+	<section>
+		<h2>Leave Management</h2>
+		<form>
+			<label for="teacher-name-leave">Teacher Name:</label>
+			<input type="text" id="teacher-name-leave" name="teacher-name-leave" required>
+			<label for="leave-date">Leave Date:</label>
+			<input type="date" id="leave-date" name="leave-date" required>
+			<label for="leave-reason">Leave Reason:</label>
+			<textarea id="leave-reason" name="leave-reason" rows="4" cols="50" required></textarea>
+			<button type="button" onclick="applyLeave()">Apply Leave</button>
+			<p id="apply-leave-sent"></p>
+		</form>
+		<div id="leave-history"></div>
+	</section>
+
+	<script src="script.js"></script>
+</body>
+</html>

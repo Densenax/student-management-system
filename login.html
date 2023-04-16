@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>IMCC | Academic Portal</title>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="container register-form" id="register-form">
+            <form action="" id="register-form" method="" class="form">
+                <h2 class="form-title title">
+                    Create Account
+                </h2>
+                <div class="form-icon"></div>
+                <small>Name of Student</small>
+                <input type="text" class="form-input" placeholder="First Name">
+                <input type="text" class="form-input" placeholder="Middle Name">
+                <input type="text" class="form-input" placeholder="Last Name">
+                <small> Date of Birth</small>
+                <input type="date" class="form-input" placeholder="Date of Birth">
+                <small> Additional Information</small>
+                <input type="tel" class="form-input" placeholder="Mobile Phone Number">
+                <input type="email" class="form-input" placeholder="Email">
+                <input type="password" class="form-input" placeholder="Enter Password" name="psw" id="psw" required>
+                <input type="password" class="form-input" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+                <button class="form-button button submit">Create Account</button>
+            </form>
+        </div>
+
+        <div class="container login-form" id="login-form">
+            <form action="" id="login-form" method="" class="form">
+                <h2 class="form-title title">
+                    Sign in To Website
+                </h2>
+                <div class="form-icon"></div>
+                <span class="form-span">use your school email and password to login</span>
+                <input type="email" class="form-input" placeholder="Email">
+                <input type="password" class="form-input" placeholder="Password">
+                <a href="#" class="form-link">Forget Your Password?</a>
+                <button class="form-button button submit">LOGIN</button>
+            </form>
+        </div>
+
+        <div class="switch" id="switch-frm">
+            <div class="switch-circle"></div>
+            <div class="switch-circle switch-circle-t"></div>
+            <div class="switch-form" id="switch-f1">
+                <h2 class="switch-title title">
+                    Already have an account?
+                </h2>
+                <p class="switch-description description">
+                    Use your school email to login through the button below
+                </p>
+                <button class="switch-button button switch-btn">LOGIN</button>
+            </div>
+
+            <div class="switch-form is-hidden" id="switch-f2">
+                <h2 class="switch-title title">
+                    Welcome to Iligan Medical Center College!
+                </h2>
+                <p class="switch-description description">
+                    If you are new and don't have an existing account, click on the button below
+                </p>
+                <button class="switch-button button switch-btn">Register</button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

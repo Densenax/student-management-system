@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manage New Students</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Manage New Students</h1>
+	<form>
+		<label for="student-name">Student Name:</label>
+		<input type="text" id="student-name" required>
+
+		<label for="student-id">Student ID:</label>
+		<input type="text" id="student-id" required>
+
+		<label for="student-age">Student Age:</label>
+		<input type="number" id="student-age" required>
+
+		<label for="student-email">Student Email:</label>
+		<input type="email" id="student-email" required>
+
+		<label for="student-phone">Student Phone:</label>
+		<input type="tel" id="student-phone" required>
+
+		<label for="student-address">Student Address:</label>
+		<textarea id="student-address" required></textarea>
+
+		<button type="button" onclick="submitStudent()">Submit</button>
+		<p id="student-sent"></p>
+	</form>
+
+	<div id="student-history">
+		<h2>Student History</h2>
+		<div class="student-row header-row">
+			<div>Student Name</div>
+			<div>Student ID</div>
+			<div>Student Age</div>
+			<div>Student Email</div>
+			<div>Student Phone</div>
+			<div>Student Address</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>

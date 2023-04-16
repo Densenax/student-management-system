@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teacher Leave Management System</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Teacher Leave Management System</h1>
+	<form>
+		<label for="teacher-name">Teacher Name:</label>
+		<input type="text" id="teacher-name" name="teacher-name" required>
+		<label for="leave-date">Leave Date:</label>
+		<input type="date" id="leave-date" name="leave-date" required>
+		<label for="leave-reason">Leave Reason:</label>
+		<textarea id="leave-reason" name="leave-reason" rows="4" cols="50" required></textarea>
+		<button type="button" onclick="applyLeave()">Apply Leave</button>
+        <p id="apply-leave-sent"></p>
+	</form>
+	<div id="leave-history"></div>
+	<script src="script.js"></script>
+</body>
+</html>

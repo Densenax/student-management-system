@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Admin Dashboard</h1>
+
+    <h2>Manage Courses</h2>
+
+    <form>
+      <label for="course-name">Name:</label>
+      <input type="text" id="course-name" name="course-name"><br>
+
+      <label for="course-code">Code:</label>
+      <input type="text" id="course-code" name="course-code"><br>
+
+      <button type="button" onclick="addCourse()">Add Course</button>
+      <p id="course-sent"></p>
+    </form>
+
+    <h2>Manage Sessions</h2>
+
+    <form>
+      <label for="session-name">Name:</label>
+      <input type="text" id="session-name" name="session-name"><br>
+
+      <label for="session-date">Date:</label>
+      <input type="date" id="session-date" name="session-date"><br>
+
+      <label for="session-course">Course:</label>
+      <select id="session-course" name="session-course">
+        <option value="">Select Course</option>
+      </select><br>
+
+      <button type="button" onclick="addSession()">Add Session</button>
+      <p id="session-sent"></p>
+    </form>
+
+    <h2>Attendance</h2>
+
+    <form>
+      <label for="attendance-session">Session:</label>
+      <select id="attendance-session" name="attendance-session">
+        <option value="">Select Session</option>
+      </select><br>
+
+      <label for="attendance-type">Type:</label>
+      <select id="attendance-type" name="attendance-type">
+        <option value="teacher">Teacher</option>
+        <option value="student">Student</option>
+      </select><br>
+
+      <button type="button" onclick="viewAttendance()">View Attendance</button>
+    </form>
+
+    <h2>Manage Subjects</h2>
+
+    <form>
+      <label for="subject-name">Name:</label>
+      <input type="text" id="subject-name" name="subject-name"><br>
+
+      <label for="subject-course">Course:</label>
+      <select id="subject-course" name="subject-course">
+        <option value="">Select Course</option>
+      </select><br>
+
+      <button type="button" onclick="addSubject()">Add Subject</button>
+      <p id="subject-sent"></p>
+    </form>
+
+    <h2>Course List</h2>
+
+    <table>
+      <tr class="header-row">
+        <td>Name</td>
+        <td>Code</td>
+      </tr>
+      <tbody id="course-list"></tbody>
+    </table>
+
+    <h2>Session List</h2>
+
+    <table>
+      <tr class="header-row">
+        <td>Name</td>
+        <td>Date</td>
+        <td>Course</td>
+      </tr>
+      <tbody id="session-list"></tbody>
+    </table>
+
+    <h2>Attendance List</h2>
+
+    <table>
+      <tr class="header-row">
+        <td>Name</td>
+        <td>Status</td>
+      </tr>
+      <tbody id="attendance-list"></tbody>
+    </table>
+
+    <h2>Subject List</h2
